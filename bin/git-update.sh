@@ -5,7 +5,7 @@ function get_dapla_team_repos {
 }
 
 function update {
-    printf "Updating ${2}... "
+    printf "Updating ${1}... "
     output=$(git -C ${1}/ pull --rebase 2>&1)
     handle_response
 }
