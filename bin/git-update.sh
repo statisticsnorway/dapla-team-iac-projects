@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "bin/_support-functions.sh"
+source "$(dirname "$0")/_support-functions.sh"
 
 function get_dapla_team_repos {
     gh repo list statisticsnorway --topic dapla-team --json name | jq -r '.[].name'

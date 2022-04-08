@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "bin/_support-functions.sh"
+source "$(dirname "$0")/_support-functions.sh"
 
 for repo in $(local_iac_repos); do    
     printf "\n"$(bold $repo)"\n"

@@ -11,7 +11,7 @@ function validate_env {
 }
 
 function validate_silently {
-    eval $1 > /dev/null
+    eval $1 > /dev/null 2>&1
     if [ $? -ne 0 ]; then
         fail ERROR "$2"
     fi
