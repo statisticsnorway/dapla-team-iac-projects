@@ -8,7 +8,7 @@ function validate_localstack_env {
     validate_silently "make --version" "make is not installed" || return 1
     validate_silently "jq --version" "jq is not installed" || return 1
     validate_silently "terraform-module-versions --help" "terraform-module-versions is not installed" || return 1
-    validate_silently "go version" "go is not installed" || return 1
+    #validate_silently "go version" "go is not installed" || return 1
     #validate_env GITHUB_TOKEN "Should hold your github auth token" || return 1
 
     echo "Hooray! You seem to be $(green healthy)"
