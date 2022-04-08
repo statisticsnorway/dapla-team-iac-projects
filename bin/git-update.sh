@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "bin/_support-functions.sh"
+
 function get_dapla_team_repos {
     gh repo list statisticsnorway --topic dapla-team --json name | jq -r '.[].name'
 }
@@ -14,14 +16,6 @@ function clone {
     printf "Cloning $1... "
     output=$(git clone git@github.com:statisticsnorway/${1}.git 2>&1)
     handle_response
-}
-
-function green {
-    printf '\e[32m%s\e[0m' "$1"
-}
-
-function red {
-    printf '\e[31m%s\e[0m' "$1"
 }
 
 function handle_response {
