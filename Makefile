@@ -5,6 +5,10 @@ help:
 .PHONY: default
 default: | help
 
+.PHONY: install-tools
+install-tools: ## Install required tooling
+	brew install goenv
+
 .PHONY: doctor
 doctor: ## Sanity check of required tools and environment settings
 	@./bin/doctor.sh

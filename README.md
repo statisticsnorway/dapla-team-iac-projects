@@ -13,6 +13,7 @@ Gather all Dapla Team IaC projects in a common root.
 Use make to execute tasks 
 
 ```
+install-tools                  Install required tooling
 doctor                         Sanity check of required tools and environment settings
 update-all                     Clone or pull all changes from Dapla Team IaC repos
 tf-module-versions-current     For each IaC repo, list all tf modules and versions
