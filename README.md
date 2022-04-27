@@ -24,3 +24,15 @@ tf-module-versions-current     For each IaC repo, list all tf modules and versio
 * [terraform-module-versions](https://github.com/keilerkonzept/terraform-module-versions)
 
 
+## IntelliJ setup
+
+To view all sub folders correctly in IntelliJ select the menu `IntelliJ IDEA` -> `Preferences...` 
+Then choose Directory Mappings under Version Control as shown below:
+
+<img src="/Users/bjornandre/code/ssb/mod-sirius/dapla-team-iac-projects/images/idea-directory-mappings.png" height="50%" width="50%"/>
+
+Select all sub folders that are listed as Unregistered Roots and select `Add`:
+
+<img src="/Users/bjornandre/code/ssb/mod-sirius/dapla-team-iac-projects/images/idea-directory-mappings-add.png" height="50%" width="50%"/>
+
+Now you should be able to commit changes for each individual IaC repository into GitHub.
