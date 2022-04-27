@@ -8,6 +8,8 @@ default: | help
 .PHONY: install-tools
 install-tools: ## Install required tooling
 	brew install goenv --head
+	export GOPATH="${HOME}/.go"
+	goenv install 1.18.0
 	go install github.com/keilerkonzept/terraform-module-versions@latest
 
 .PHONY: doctor
