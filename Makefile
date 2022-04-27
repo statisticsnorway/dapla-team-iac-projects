@@ -7,7 +7,8 @@ default: | help
 
 .PHONY: install-tools
 install-tools: ## Install required tooling
-	brew install goenv
+	brew install goenv --head
+	go install github.com/keilerkonzept/terraform-module-versions@latest
 
 .PHONY: doctor
 doctor: ## Sanity check of required tools and environment settings
