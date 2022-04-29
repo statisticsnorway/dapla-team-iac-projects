@@ -16,3 +16,11 @@ update-all: ## Clone or pull all changes from Dapla Team IaC repos
 .PHONY: tf-module-versions-current
 tf-module-versions-current: ## For each IaC repo, list all tf modules and versions
 	@./bin/tf-module-versions-current.sh
+
+.PHONY: tf-format-all
+tf-format-all: ## For each IaC repo run Terraform formatting
+	@./bin/tf-format-all.sh
+
+.PHONY: git-pr-all
+git-pr-all: ## For each IaC repo create a pull request with changes
+	@./bin/git-pr-all.sh
