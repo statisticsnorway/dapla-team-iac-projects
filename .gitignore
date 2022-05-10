@@ -1,2 +1,5 @@
 /.idea
 *-iac/
+dapla-team-*/
+*.iml
+.DS_Store
